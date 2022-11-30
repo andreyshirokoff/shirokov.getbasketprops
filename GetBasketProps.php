@@ -3,7 +3,7 @@
 use Bitrix\Main;
 use Bitrix\Sale;
 
-class GetBasketProps
+//class GetBasketProps
 {
     /**
      * Передай в параметр массив свойств товаров из корзины, с которыми хочешь работать
