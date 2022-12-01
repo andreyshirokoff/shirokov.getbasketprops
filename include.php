@@ -1,4 +1,4 @@
 <?php
-Bitrix\Main\Loader::registerAutoLoadClasses('get.basket.props', [
+Bitrix\Main\Loader::registerAutoLoadClasses('shirokov.getbasketprops', [
     'GetBasketPropClass' => 'lib/GetBasketPropClass.php',
 ]);
