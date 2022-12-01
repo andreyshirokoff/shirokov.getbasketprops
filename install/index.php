@@ -38,8 +38,6 @@ class shirokov_getbasketprops extends CModule
     {
         global $APPLICATION;
         if ($this->isVersionD7()) {
-//            $this->InstallDB();
-//            $this->InstallEvents();
             $this->installClass();
             $this->InstallFiles();
 
@@ -55,19 +53,7 @@ class shirokov_getbasketprops extends CModule
 
         $this->UnInstallFiles();
         $this->UnInstallClass();
-//        $this->UnInstallEvents();
-//        $this->UnInstallDB();
     }
-
-//    function InstallDB()
-//    {
-//        return true;
-//    }
-
-//    function UnInstallDB()
-//    {
-//        return true;
-//    }
 
     function installFiles()
     {
@@ -89,50 +75,4 @@ class shirokov_getbasketprops extends CModule
         $GetBasketPropClass = new GetBasketPropClass;
         $GetBasketPropClass->deleteClass();
     }
-
-//    function getEvents()
-//    {
-//        return [
-//            ['FROM_MODULE' => 'sale', 'EVENT' => 'OnBasketAdd', 'TO_METHOD' => 'CheckBasket'],
-//            ['FROM_MODULE' => 'sale', 'EVENT' => 'OnBasketDelete', 'TO_METHOD' => 'CheckBasket'],
-//        ];
-//    }
-//
-//    function InstallEvents()
-//    {
-//        $classHandler = 'GetBasketPropClass';
-//        $eventManager = EventManager::getInstance();
-//
-//        $arEvents = $this->getEvents();
-//        foreach($arEvents as $arEvent){
-//            $eventManager->registerEventHandler(
-//                $arEvent['FROM_MODULE'],
-//                $arEvent['EVENT'],
-//                $this->MODULE_ID,
-//                $classHandler,
-//                $arEvent['TO_METHOD']
-//            );
-//        }
-//
-//        return true;
-//    }
-
-//    function UnInstallEvents()
-//    {
-//        $classHandler = 'GetBasketPropClass';
-//        $eventManager = EventManager::getInstance();
-//
-//        $arEvents = $this->getEvents();
-//        foreach($arEvents as $arEvent){
-//            $eventManager->unregisterEventHandler(
-//                $arEvent['FROM_MODULE'],
-//                $arEvent['EVENT'],
-//                $this->MODULE_ID,
-//                $classHandler,
-//                $arEvent['TO_METHOD']
-//            );
-//        }
-//
-//        return true;
-//    }
 }
