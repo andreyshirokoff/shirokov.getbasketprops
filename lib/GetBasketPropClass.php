@@ -97,7 +97,7 @@ class GetBasketProps';
         $getBasketElementPropertyValue = '
     /**
      * Get the basket array of the product properties and their values
-     * @param $property
+     * @param $property: array
      * @return array
      * @throws Main\ArgumentException
      * @throws Main\ArgumentTypeException
