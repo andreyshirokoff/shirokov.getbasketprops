@@ -49,12 +49,12 @@
 
 # Редактирование модуля (НЕ РЕКОМЕНДУЕТСЯ!)
 Если Ваши классы расположены в другой директории, то стоит отредактировать две функции __addClass()__ и __deleteClass()__ внутримодульного класса **GetBasketPropClass**, расположенного относительно модуля по директории: "lib/GetBasketPropClass.php".
-
+**ПУТЬ_К_КЛАССАМ**
 Пример редактирования:
 
     public function addClass()
     {
-        if(!file_exists($_SERVER['DOCUMENT_ROOT'].'/**ПУТЬ_К_КЛАССАМ**'))
+        if(!file_exists($_SERVER['DOCUMENT_ROOT'].'/ПУТЬ_К_КЛАССАМ'))
         {
             mkdir($_SERVER['DOCUMENT_ROOT'].'/ПУТЬ_К_КЛАССАМ');
         }
