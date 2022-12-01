@@ -1,4 +1,4 @@
-# Shirokov's GetBasketProps
+# GetBasketProps
 Данный модуль добавляет класс **GetBasketProps** для взаимодействия со свойствами товаров из корзины.
 
 # Подключение
