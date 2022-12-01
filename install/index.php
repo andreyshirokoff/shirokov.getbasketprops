@@ -20,7 +20,7 @@ class shirokov_getbasketprops extends CModule
         $this->MODULE_DESCRIPTION = Loc::getMessage('GET_BASKET_PROPS_MODULE_DESC');
 
         $this->PARTNER_NAME = Loc::getMessage('GET_BASKET_PROPS_PARTNER_NAME');
-        $this->PARTNER_URI = 'https://t.me/columb1aini11';
+        $this->PARTNER_URI = 'https://t.me/columb1anin11';
 
         $this->FILE_PREFIX = 'getprop';
         $this->MODULE_FOLDER = str_replace('.', '_', $this->MODULE_ID);
